@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCartPlus, FaCartArrowDown } from "react-icons/fa";
 import "./App.css";
 
 function Carrinho() {
   const [quantidade, setQuantidade] = useState(0);
+
+  useEffect(() => { //sempre altera quando o valor de 'quantidade' mudar...
+    document.title = `Itens no Carrinho: ${quantidade}`;
+  }, [quantidade]);//lista de dependências
 
   const adicionarItem = () => {
     setQuantidade(quantidade + 1);
