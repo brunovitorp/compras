@@ -1,0 +1,26 @@
+.carrinho-container {
+  text-align: center;
+  color: aliceblue;
+}
+
+.carrinho-itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+.quantidade {
+  margin: 0 5px; /* Ajuste a margem conforme necessário */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar-left {
+  margin-left: auto;
+}
